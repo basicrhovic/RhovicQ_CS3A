@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <style>
+        body{
+            max-width: 95%;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+        .product{
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 20px;
+            gap: 25px;
+        }
+        img{
+            height: 150px;
+        }
+    </style>
+    <div class="container">
+        <div class="product">
+            <h2>RED BULL</h2>
+            <img src="./assets/red bull.png" alt="">
+            <h3>Price: Php 85.00</h3>
+            <button class="btn btn-success" onclick="addToCart('RED BULL, 85.00')">Add to cart</button>
+            <button class="btn btn-danger" onclick="removeFromCart('RED BULL, 85.00')">Remove from cart</button>
+        </div>
+
+        <div class="product">
+            <h2>GATORADE</h2>
+            <img src="./assets/sports drink.png" alt="">
+            <h3>Price: Php 55.00</h3>
+            <button class="btn btn-success" onclick="addToCart('GATORADE, 55.00')">Add to cart</button>
+            <button class="btn btn-danger" onclick="removeFromCart('GATORADE, 55.00')">Remove from cart</button>
+        </div>
+
+        <div class="cart">
+            <h2>Customer's Cart</h2>
+            <ul id="products"></ul>
+        </div>
+    </div>
+    
+    <script>
+        const cart = [];
+        function addToCart(productName, productPrice){
+            if (cart[productName]) {
+                cart[productName].quantity += 1;
+                cart[productName].totalPrice += productPrice;
+
+            } else{
+                cart[productName] = {
+                    quantity: 1,
+                    totalPrice: productPrice
+                }
+            }
+
+        }
+
+        function removeToCart(productName, productPrice){
+
+        }
+        function updateCartDisplay(){
+            const cartList = document .getElementById('cart');
+            cartList.innerHTML = '';
+            for (let product in cart) {
+                const listItem = document.createElement('li');
+                listItem.innerText = `$(product)
+                                        - Quantity: ${cart[product].quantity}
+                                        - Total Price: Php ${cart[product].totalPrice.totalFixed(2)}`;
+                cartList.appendChild(listItem); 
+            }
+        }
+    </script>
+
+</body>
+
+</html>

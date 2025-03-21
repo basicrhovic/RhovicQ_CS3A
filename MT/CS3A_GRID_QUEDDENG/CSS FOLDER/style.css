@@ -1,0 +1,29 @@
+body {
+    font: sans-serif;
+}
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb( 207 232 220);
+    border: 2px solid rgb(79 185 227);
+}
+
+
+.container {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  header,
+  footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    text-align: center;
+  }
+  aside {
+    border-right: 1px solid rebeccapurple;
+  }
