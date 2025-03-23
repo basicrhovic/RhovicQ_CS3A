@@ -1,0 +1,370 @@
+/* Reset and Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1400px;
+    width: 95vw;
+    margin: 0 auto;
+    padding: 100px 20px 40px;
+    background: #f4f4f4;
+    display: flex;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #555;
+    color: #f4f4f4;
+}
+
+/* Sidebar */
+aside {
+    width: 30%;
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px 0 0 10px;
+    
+    /* Sticky sidebar */
+    position: sticky;
+    top: 90px; 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside h1, aside h2, aside p {
+    text-align: center;
+}
+
+aside h1 {
+    font-size: 28px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+/* Centered portrait */
+aside .portrait {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; 
+}
+
+aside h2 {
+    font-size: 24px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+aside p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+aside a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 5px 0;
+}
+
+aside a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Main Content */
+main {
+    width: 70%;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 0 10px 10px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    text-align: justify;
+    line-height: 1.8;
+    color: #333;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #000;
+    border-bottom: 3px solid #555;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Skills Section - Two Columns */
+.skills {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Display skills in two columns */
+.skills-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Uniform skills size */
+.skills-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.3s;
+    
+    /* 1x1 ratio */
+    aspect-ratio: 1 / 1;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Achievements Section */
+.achievements-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.achievements-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Side by side layout */
+.container-achievements {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.column-achievements {
+    flex: 1;  
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.column-achievements:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+li {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Information Section */
+.contact-information {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+
+.contact-information h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-information h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;  
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Contact items */
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item, .contact-item.link {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.contact-item:hover, .contact-item.link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Form Section */
+form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}

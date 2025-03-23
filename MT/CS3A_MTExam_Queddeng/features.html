@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Features</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./css/features.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <!-- Navigation links -->
+        <a href="./homepage.html">Home</a>
+        <a href="./features.html">Features</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <main>
+        <!-- Section title -->
+        <h1 class="section-title">7 - Evelyn</h1>
+
+        <div class="product-grid" id="product-list">
+
+            <!-- 12 Products -->
+            
+            <div class="product" data-name="Product 1" data-price="150" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/drinks/bottled water.png" alt="Product 1" style="width: 150px; height: 150px; object-fit:fill;">
+                
+                <!-- Product name -->
+                <h3>Magic Water</h3>
+                
+                <!-- Product description -->
+                <p>Refreshing bottled virgen water, taste of purity. </p>
+                
+                <!-- Product price -->
+                <p style="margin-top: auto; font-weight: bold; text-align:center;">₱150</p>
+                
+                <!-- Add to cart button -->
+                <button onclick="addToCart(this)"style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 2" data-price="200" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/drinks/coffee.png" alt="Product 2" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Decaffeinated coffee</h3>
+                <p>A strong taste like the coffee you already know.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱165</p>
+                <button onclick="addToCart(this)"style="margin-top: auto;">Add to Cart</button>
+                
+            </div>
+            
+
+            <div class="product" data-name="Product 3" data-price="120" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/drinks/energy.png" alt="Product 3" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Red Bull</h3>
+                <p>Long lasting energy, that can improve your performance.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱120</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 4" data-price="180" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/drinks/milk.png" alt="Product 4" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Milky</h3>
+                <p>Full of nutrients that you're not expecting.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱180</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 5" data-price="130" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/fruits&vegetables/Daks.png" alt="Product 5" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Great Eggplant</h3>
+                <p>The eggplant everyone is looking for, perfect for any occasion.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱130 per Kg.</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 6" data-price="220" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/fruits&vegetables/Baguio Beans.png" alt="Product 6" style="width: 150px; height: 150px; object-fit: fill;">
+                <h3>Baguio Beans</h3>
+                <p>No need to go to Baguio, here it is.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱220 per Kg.</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 7" data-price="1000" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/fruits&vegetables/Korean Pear.png" alt="Product 7" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Korean Pear</h3>
+                <p>No need to go to North Korea, here it is.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱1000 per Kg.</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 8" data-price="140" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/fruits&vegetables/Seedless Watermelom.png" alt="Product 8" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Seedless Watermelom</h3>
+                <p>Wait till we make it Skinless.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱140 per Kg.</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 9" data-price="160" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/sweets/magnum.png" alt="Product 9" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Magnum</h3>
+                <p>Premium taste of ice cream.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱160</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 10" data-price="190" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/sweets/pop corners.png" alt="Product 10"style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Pop Corners</h3>
+                <p>A crunchy and light snack made from popped corn.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱190</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 11" data-price="210" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/sweets/resees sticks.png" alt="Product 11" style="width: 150px; height: 150px; object-fit:fill;">
+                <h3>Resees Sticks</h3>
+                <p>A crispy wafer layered with peanut butter and covered in chocolate.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱210</p>
+                <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 12" data-price="230" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+                <img src="./assets/products/sweets/starburst.png" alt="Product 12" style="width: 150px; height: 150px; object-fit:fill;"> 
+                <h3>Starburst</h3>
+                <p>A soft and chewy candy with a fruity flavor.</p>
+                <p style="margin-top: auto; font-weight: bold; text-align: center;">₱230</p>
+                <button onclick="addToCart(this)"style="margin-top: auto;">Add to Cart</button>
+            </div>
+
+        </div>
+    </main>
+
+    <aside>
+        <!-- Shopping cart section -->
+        <h2>Shopping Cart</h2>
+        
+        <div id="cart">
+            <!-- Initial empty cart message -->
+            <p>Cart is empty</p>
+        </div>
+    </aside>
+</div>
+
+<footer class="footer">
+    <!-- Footer with copyright info -->
+    <p>© <time>2025</time> Rhovic James G. Queddeng. All rights reserved.</p>
+</footer>
+
+<!-- Link to external JavaScript file -->
+<script src="./js/cart.js"></script>
+
+</body>
+</html>
