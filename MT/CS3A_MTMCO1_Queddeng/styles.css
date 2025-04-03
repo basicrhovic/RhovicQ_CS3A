@@ -1,0 +1,318 @@
+/* Basic styles for the layout */
+body {
+    font-family: 'Arial', sans-serif; /* Font styling */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: rgb(240, 240, 240); /* Light gray background */
+}
+
+header {
+    background-color: #0D0D0D; /* Vantablack background for header */
+    color: #FFFFFF; /* White text color */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Center text in header */
+    position: static; /* Positioned statically */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav {
+    margin: 20px 0; /* Margin for navigation */
+}
+
+nav a {
+    color: #FFFFFF; /* White text color for links */
+    margin: 0 15px; /* Margin for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #0D0D0D; /* Vantablack text on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.hero {
+    padding: 50px 20px; /* Padding for hero section */
+    text-align: center; /* Center text in hero section */
+    background-color: rgb(220, 220, 220); /* Sharper light gray background */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    max-width: 1200px; /* Max width for container */
+    margin: auto; /* Center the container */
+}
+
+.aside {
+    flex: 1; /* Flex item takes up 1 part */
+    padding: 20px; /* Padding for aside */
+    background-color: #0D0D0D; /* Vantablack background */
+    color: #FFFFFF; /* White text color */
+    text-align: center; /* Center text in aside */
+    margin-right: 20px; /* Space between aside and content */
+    border-radius: 10px; /* Rounded corners for aside */
+}
+
+.content {
+    flex: 2; /* Flex item takes up 2 parts */
+    padding: 20px; /* Padding for content */
+    background-color: #FFFFFF; /* White background for content area */
+    border-radius: 10px; /* Rounded corners for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for content */
+}
+
+.chapters {
+    padding: 20px; /* Padding for chapters section */
+    max-width: 800px; /* Max width for chapters */
+    margin: auto; /* Center chapters */
+    background-color: #FFFFFF; /* White background for chapters */
+    border-radius: 10px; /* Rounded corners for chapters */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for chapters */
+    margin-top: 20px; /* Space between sections */
+}
+
+/* Contact Information Section */
+.contact-information {
+    max-width: 1100px; /* Max width for contact information */
+    margin: 0 auto; /* Center contact information */
+    padding: 40px 20px; /* Padding for contact information */
+    background: #f4f4f4; /* Light gray background */
+}
+
+.contact-information h2 {
+    font-size: 28px; /* Font size for heading */
+    text-align: center; /* Center heading text */
+    margin-bottom: 20px; /* Bottom margin for heading */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.contact-information h2::after {
+    content: ""; /* Pseudo-element for underline */
+    display: block; /* Block display */
+    width: 100%; /* Full width */
+    height: 2px; /* Height for underline */
+    background: white; /* White underline */
+    position: absolute; /* Absolute positioning */
+    bottom: -5px; /* Position below heading */
+    left: 0; /* Align to left */
+}
+
+/* Contact items */
+.info-items {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout for items */
+    gap: 15px; /* Gap between items */
+}
+
+.contact-item, .contact-item.link {
+    background: #fff; /* White background for items */
+    padding: 15px; /* Padding for items */
+    border-radius: 8px; /* Rounded corners for items */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for items */
+    transition: 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect */
+.contact-item:hover, .contact-item.link:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+a {
+    text-decoration: none; /* Remove underline from all links */
+}
+
+/* Form Section */
+.form-container {
+    max-width: 600px; /* Max width for form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Padding for form */
+}
+
+form {
+    background: #fff; /* White background for form */
+    padding: 40px; /* Padding for form */
+    border-radius: 8px; /* Rounded corners for form */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* Shadow for form */
+}
+
+label {
+    font-size: 16px; /* Font size for label */
+    font-weight: bold; /* Bold text for label */
+    color: #333; /* Dark color for label */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs and textareas */
+    padding: 12px; /* Padding for inputs and textareas */
+    margin: 8px 0; /* Margin for inputs and textareas */
+    border: 1px solid #ccc; /* Light border for inputs and textareas */
+    border-radius: 4px; /* Rounded corners for inputs and textareas */
+    transition: 0.3s; /* Transition for focus effect */
+}
+
+input:focus, textarea:focus {
+    border-color: #000; /* Dark border on focus */
+    outline: none; /* Remove outline */
+}
+
+.btn-group {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+}
+
+button {
+    display: inline-block; /* Inline block display for button */
+    background: #000; /* Black background for button */
+    color: #fff; /* White text color for button */
+    border: none; /* No border for button */
+    padding: 12px 30px; /* Padding for button */
+    font-size: 18px; /* Font size for button */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background: #555; /* Darker background on hover */
+}
+
+#form {
+    display: flex; /* Flexbox for form layout */
+    justify-content: center; /* Center form items */
+    align-items: center; /* Align items vertically */
+    flex-direction: column; /* Column layout for form */
+}
+
+.form-container {
+    width: 100%; /* Full width for form container */
+    max-width: 600px; /* Limit max width for form */
+    margin: 0 auto; /* Center form container horizontally */
+}
+
+/* Skills Section - Two Columns */
+.skills {
+    max-width: 1100px; /* Max width for skills section */
+    margin: 0 auto; /* Center skills section */
+    padding: 40px 20px; /* Padding for skills section */
+}
+
+.skills h2 {
+    text-align: center; /* Center heading text */
+    font-size: 28px; /* Font size for heading */
+    margin-bottom: 30px; /* Bottom margin for heading */
+}
+
+/* Display skills in two columns */
+.skills-column {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Gap between items */
+    justify-content: center; /* Center items */
+    align-items: center; /* Align items centrally */
+}
+
+/* Uniform skills size */
+.skills-row {
+    display: flex; /* Flexbox layout for skills row */
+    justify-content: center; /* Center items in row */
+    gap: 30px; /* Gap between skills */
+    flex-wrap: wrap; /* Wrap items to the next line */
+}
+
+.skill {
+    background: #f4f4f4; /* Light gray background for skill */
+    border: 1px solid #ccc; /* Light border for skill */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for skill */
+    border-radius: 8px; /* Rounded corners for skill */
+    transition: 0.3s; /* Transition for hover effect */
+    
+    /* 1x1 ratio */
+    aspect-ratio: 1 / 1; /* Keep square aspect ratio */
+    max-width: 250px; /* Max width for skill */
+    width: 100%; /* Full width for skill */
+    display: flex; /* Flexbox layout for skill */
+    flex-direction: column; /* Column layout for skill content */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.skill img {
+    width: 80px; /* Width for skill image */
+    height: 80px; /* Height for skill image */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Margin below image */
+}
+
+.skill p {
+    font-size: 16px; /* Font size for skill description */
+    color: #333; /* Dark color for description */
+    margin: 10px 0; /* Margin for description */
+}
+
+/* Achievements Section */
+.achievements-section {
+    max-width: 1100px; /* Max width for achievements section */
+    margin: 0 auto; /* Center achievements section */
+    padding: 40px 20px; /* Padding for achievements section */
+}
+
+.achievements-section h2 {
+    text-align: center; /* Center heading text */
+    font-size: 28px; /* Font size for heading */
+    margin-bottom: 30px; /* Bottom margin for heading */
+}
+
+/* Side by side layout */
+.container-achievements {
+    display: flex; /* Flexbox layout for achievements */
+    justify-content: space-between; /* Space between items */
+    gap: 30px; /* Gap between items */
+    flex-wrap: wrap; /* Wrap items if necessary */
+}
+
+.column-achievements {
+    flex: 1; /* Flex item takes up 1 part */
+    background: #f4f4f4; /* Light gray background for column */
+    padding: 20px; /* Padding for column */
+    border-radius: 8px; /* Rounded corners for column */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for column */
+    transition: 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect */
+.column-achievements:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+ol {
+    padding-left: 20px; /* Indentation for ordered list */
+    line-height: 1.8; /* Line height for list items */
+}
+
+li {
+    font-size: 16px; /* Font size for list items */
+    color: #333; /* Dark color for list items */
+}
+
+
+
+
+/* Footer */
+footer {
+    background: #000; /* Black background for footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center footer text */
+    padding: 15px 0; /* Padding for footer */
+    font-size: 14px; /* Font size for footer */
+}

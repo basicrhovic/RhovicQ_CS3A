@@ -56,11 +56,29 @@ nav a:hover {
     background: #555;
     color: #f4f4f4;
 }
+
+.hero {
+    font-size: 40px;
+    padding: 100px;
+}
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.section-title img {
+    margin-right: 20px;
+}
+.hero p {
+    text-align: center;
+    letter-spacing: 10px;
+}
+
 /* Sidebar Section */
 aside {
     width: 25%;
     background-color: #333;
-    color: white;
     padding: 40px;
     text-align: center;
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
@@ -80,7 +98,7 @@ aside h1 {
 
 aside p {
     font-size: 16px;
-    color: #ccc;
+    color: black;
 }
 
 aside a {
@@ -255,4 +273,48 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+aside {
+    position: sticky;
+    top: 20px;
+    height: 100vh;
+    overflow: auto;
+}
+aside h2 {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#cart > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 10px 15px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333; /* Dark gray text */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    max-width: 300px; /* Limit width */
+}
+
+.removebtn {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.removebtn:hover {
+    background-color: #c82333; /* Darker red on hover */
 }

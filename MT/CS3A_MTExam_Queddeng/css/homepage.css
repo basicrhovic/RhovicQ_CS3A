@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 .container {
@@ -46,8 +47,8 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    padding: 8px 15px;
+    font-size: 14px;
+    padding: 4px 10px;
     border-radius: 4px;
     transition: background 0.3s;
 }
@@ -67,11 +68,12 @@ aside {
     
     /* Sticky sidebar */
     position: sticky;
-    top: 90px; 
-    height: fit-content;
+    top: 70px; 
     display: flex;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
+    /* height: 90vh; */
 }
 
 aside h1, aside h2, aside p {
@@ -141,6 +143,15 @@ main {
     color: #333;
     padding: 30px;
     margin-bottom: 60px;
+}
+.hero p {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
 }
 
 h2 {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>My Autobiography</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>My Autobiography</h1>
+        <nav>
+            <a href="#hero">Hero</a>
+            <a href="#main">Main Section</a>
+            <a href="#chapters">Chapters</a>
+            <a href="#contact-information">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h2>Hi there, I'm Rhovic!</h2>
+        <p>"A third-year BS in Computer Science student, passionate about technology and avid reader. I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments. Seeking a competitive position to enhance my skills and contribute to a professional organization."</p>
+    </section>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <div class="skills-column">
+                    <div class="skills-row">
+                        <div class="skill">
+                            <img src="./assets/skills/html.png" alt="">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/skills/css.png" alt="">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/skills/js.png" alt="">
+                            <p>JS</p>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skill">
+                            <div class="top-card"></div>
+                            <img src="./assets/skills/reactjs.png" alt="">
+                            <p>React JS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/skills/nodejs.png" alt="">
+                            <p>Node JS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/skills/expressjs.png" alt="">
+                            <p>Express JS</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements-section" id="achievements">
+                <h2>Achievements</h2>
+                <div class="container-achievements">
+                    <div class="column-achievements">
+                        <ol>
+                            <li>Hackathon Award</li>
+                            <li>Innovative Tech Solutions Award</li>
+                            <li>Deans Lister Award</li>
+                            <li>ROTC Completion Medal - Commissioned</li>
+                        </ol>
+                    </div>
+                    <div class="column-achievements">
+                        <ol start="5">
+                            <li>Best UI/UX Design Award</li>
+                            <li>Top Project Contributor Award</li>
+                            <li>Hackathon Winner</li>
+                            <li>Employee of the Year</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <div class="chapters" id="chapters">
+                <h2>Chapters of My Autobiography</h2>
+                <h3>Chapter 1: [Title of Chapter 1]</h3>
+                <p>This is the content of Chapter 1.</p>
+                <h3>Chapter 2: [Title of Chapter 2]</h3>
+                <p>This is the content of Chapter 2.</p>
+                <h3>Chapter 3: [Title of Chapter 3]</h3>
+                <p>This is the content of Chapter 3.</p>
+                <h3>Chapter 4: [Title of Chapter 4]</h3>
+                <p>This is the content of Chapter 4.</p>
+                <h3>Chapter 5: [Title of Chapter 5]</h3>
+                <p>This is the content of Chapter 5.</p>
+                <h3>Chapter 6: [Title of Chapter 6]</h3>
+                <p>This is the content of Chapter 6.</p>
+                <h3>Chapter 7: [Title of Chapter 7]</h3>
+                <p>This is the content of Chapter 7.</p>
+            </div>
+
+            <section class="contact-information" id="contact-information">
+                <h2>Contact Information</h2>
+                <div class="info-items">
+                    <div class="contact-item"><strong>Name:</strong> Rhovic James G. Queddeng</div>
+                    <div class="contact-item"><strong>Address:</strong> Caterman, Candon City, Ilocos Sur</div>
+                    <div class="contact-item"><strong>Email:</strong> rhovicjames@gmail.com</div>
+                    <a href="https://www.linkedin.com/in/rhovic-james-queddeng-159032303/" target="_blank">
+                        <div class="contact-item link"><strong>LinkedIn:</strong> Rhovic James Queddeng</div>
+                    </a>
+                    <a href="https://github.com/basicrhovic" target="_blank">
+                        <div class="contact-item link"><strong>GitHub:</strong> basicrhovic</div>
+                    </a>
+                    <a href="https://web.facebook.com/Kim.Pkar" target="_blank">
+                        <div class="contact-item link"><strong>Facebook:</strong> Rhovic James</div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="form">
+                <h2>Contact Form</h2>
+                <div class="form-container">
+                    <form action="">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <div class="btn-group">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <aside class="aside">
+            <img class="portrait" src="./assets/portrait.jpg" alt="" style="width: 80%; aspect-ratio: 3 / 4;">
+            <h1>Rhovic James G. Queddeng</h1>
+            <p>Computer Science Student</p>
+            <p>21 Years Old</p>
+            <p>Male</p>
+            <p>Filipino</p>
+            <p>Single</p>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>© <time>2025</time> Rhovic James G. Queddeng. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

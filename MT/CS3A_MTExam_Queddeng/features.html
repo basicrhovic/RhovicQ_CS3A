@@ -27,13 +27,23 @@
 
     <main>
         <!-- Section title -->
-        <h1 class="section-title">7 - Evelyn</h1>
+        <h1 class="section-title">
+            <img src="./assets/store logo.png" alt="" width="50">
+            7 - Evelyn
+        </h1>
+
+         <!-- Hero Section with Introduction -->
+         <section class="hero" id="hero">
+            <p>
+                "Your go to 24 - 7 convenience store always open to serve you, anytime, anywhere, because we're here whenever you need us, day or night!"
+            </p>
+        </section>
 
         <div class="product-grid" id="product-list">
 
             <!-- 12 Products -->
             
-            <div class="product" data-name="Product 1" data-price="150" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Magic Water" data-price="150" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/drinks/bottled water.png" alt="Product 1" style="width: 150px; height: 150px; object-fit:fill;">
                 
                 <!-- Product name -->
@@ -49,7 +59,7 @@
                 <button onclick="addToCart(this)"style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 2" data-price="200" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Decaffeinated Coffee" data-price="200" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/drinks/coffee.png" alt="Product 2" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Decaffeinated coffee</h3>
                 <p>A strong taste like the coffee you already know.</p>
@@ -59,7 +69,7 @@
             </div>
             
 
-            <div class="product" data-name="Product 3" data-price="120" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Red Bull" data-price="120" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/drinks/energy.png" alt="Product 3" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Red Bull</h3>
                 <p>Long lasting energy, that can improve your performance.</p>
@@ -67,7 +77,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 4" data-price="180" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Milky" data-price="180" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/drinks/milk.png" alt="Product 4" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Milky</h3>
                 <p>Full of nutrients that you're not expecting.</p>
@@ -75,7 +85,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 5" data-price="130" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Great Eggplant" data-price="130" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/fruits&vegetables/Daks.png" alt="Product 5" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Great Eggplant</h3>
                 <p>The eggplant everyone is looking for, perfect for any occasion.</p>
@@ -83,7 +93,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 6" data-price="220" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Baguio Beans" data-price="220" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/fruits&vegetables/Baguio Beans.png" alt="Product 6" style="width: 150px; height: 150px; object-fit: fill;">
                 <h3>Baguio Beans</h3>
                 <p>No need to go to Baguio, here it is.</p>
@@ -91,7 +101,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 7" data-price="1000" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Korean Pear" data-price="1000" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/fruits&vegetables/Korean Pear.png" alt="Product 7" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Korean Pear</h3>
                 <p>No need to go to North Korea, here it is.</p>
@@ -99,15 +109,15 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 8" data-price="140" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Seedless Watermelon" data-price="140" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/fruits&vegetables/Seedless Watermelom.png" alt="Product 8" style="width: 150px; height: 150px; object-fit:fill;">
-                <h3>Seedless Watermelom</h3>
+                <h3>Seedless Watermelon</h3>
                 <p>Wait till we make it Skinless.</p>
                 <p style="margin-top: auto; font-weight: bold; text-align: center;">₱140 per Kg.</p>
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 9" data-price="160" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Magnum" data-price="160" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/sweets/magnum.png" alt="Product 9" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Magnum</h3>
                 <p>Premium taste of ice cream.</p>
@@ -115,7 +125,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 10" data-price="190" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Pop Corners" data-price="190" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/sweets/pop corners.png" alt="Product 10"style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Pop Corners</h3>
                 <p>A crunchy and light snack made from popped corn.</p>
@@ -123,7 +133,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 11" data-price="210" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Resees Sticks" data-price="210" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/sweets/resees sticks.png" alt="Product 11" style="width: 150px; height: 150px; object-fit:fill;">
                 <h3>Resees Sticks</h3>
                 <p>A crispy wafer layered with peanut butter and covered in chocolate.</p>
@@ -131,7 +141,7 @@
                 <button onclick="addToCart(this)" style="margin-top: auto;">Add to Cart</button>
             </div>
 
-            <div class="product" data-name="Product 12" data-price="230" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
+            <div class="product" data-name="Starburst" data-price="230" style="display: flex; flex-direction: column; justify-content: space-between; height: 350px;">
                 <img src="./assets/products/sweets/starburst.png" alt="Product 12" style="width: 150px; height: 150px; object-fit:fill;"> 
                 <h3>Starburst</h3>
                 <p>A soft and chewy candy with a fruity flavor.</p>
@@ -148,7 +158,6 @@
         
         <div id="cart">
             <!-- Initial empty cart message -->
-            <p>Cart is empty</p>
         </div>
     </aside>
 </div>
@@ -159,7 +168,7 @@
 </footer>
 
 <!-- Link to external JavaScript file -->
-<script src="./js/cart.js"></script>
+<script src="./cart.js" defer></script>
 
 </body>
 </html>
