@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional_style.css">
+    <style>
+        /* Style all anchor tags with a uniform background color */
+        a {
+            background-color: rgb(220, 220, 220); 
+        }
+        /* Style the main title using an ID selector */
+        #main-title {
+            text-align: center;
+            padding: 30px 0 20px;
+            font-size: 44px;
+            color: #0D0D0D; 
+            font-family: 'Arial', sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">CSS Basics</h1>
+        <ul>
+            <!-- Inline CSS applied to change the color of this link -->
+            <li><a rel="noopener" target="_blank" href="https://www.google.com/" style="color: #0D0D0D;">Google</a></li>
+            <li><a rel="noopener" target="_blank" href="https://www.facebook.com/">Facebook</a></li>
+            <!-- Reusable button class applied to this link -->
+            <li><a class="button" rel="noopener" target="_blank" href="https://www.youtube.com/">YouTube</a></li>
+        </ul>
+    </header>
+    <hr>
+    <main>
+        <!-- Parent and child elements styled with CSS -->
+        <div class="parent-container-1">
+            Parent Container 1
+            <div class="child-element">Child 1 of Parent Container 1</div>
+            <div class="child-element">Child 2 of Parent Container 1</div>
+            <div class="child-element">Child 3 of Parent Container 1</div>
+        </div>
+        <div class="parent-container-2">
+            Parent Container 2
+            <div class="child-element">Child 1 of Parent Container 2</div>
+            <div class="child-element">Child 2 of Parent Container 2</div>
+            <div class="child-element">Child 3 of Parent Container 2</div>
+        </div>
+        <div class="parent-container-3">
+            Parent Container 3
+            <div class="child-element">Child 1 of Parent Container 3</div>
+            <div class="child-element">Child 2 of Parent Container 3</div>
+            <div class="child-element">Child 3 of Parent Container 3</div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; <time>2025</time> Rhovic James G. Queddeng. All rights reserved.</p>
+    </footer>
+</body>
+</html>

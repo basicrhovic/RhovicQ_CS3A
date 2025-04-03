@@ -1,0 +1,38 @@
+/* Button class with styles for color, background, font, and weight */
+.button {
+    font-family: 'Verdana', sans-serif; /* Updated font */
+    font-weight: 500;
+    color: rgb(240, 240, 240); /* Sharper matte white */
+    background-color: #0D0D0D; /* Sharper Vantablack */
+}
+
+a:hover {
+    background-color: #0D0D0D; /* Sharper Vantablack */
+    /* Using !important to enforce color change */
+    color: rgb(255, 255, 255) !important; /* White */
+}
+
+.parent-container-1 .child-element {
+    width: 40%;
+    color: #0D0D0D; /* Sharper Vantablack */
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace; /* Updated font */
+    font-weight: lighter;
+}
+
+.parent-container-2 .child-element {
+    background-color: #0D0D0D; /* Sharper Vantablack */
+    width: 60%;
+    color: rgb(220, 220, 220); /* Sharper light gray */
+    font-style: italic;
+    font-family: 'Georgia', serif; /* Updated font */
+    font-weight: bold;
+}
+
+.parent-container-3 .child-element {
+    width: 80%;
+    color: #0D0D0D; /* Sharper Vantablack */
+    font-style: oblique;
+    font-family: 'Arial', sans-serif; /* Updated font */
+    font-weight: bolder;
+}
