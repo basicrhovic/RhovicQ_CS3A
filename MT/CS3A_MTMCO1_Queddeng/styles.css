@@ -14,6 +14,7 @@ header {
     text-align: center; /* Center text in header */
     position: static; /* Positioned statically */
     z-index: 1000; /* Ensure it stays above other content */
+    height: 15vh;
 }
 
 nav {
@@ -54,6 +55,9 @@ nav a:hover {
     text-align: center; /* Center text in aside */
     margin-right: 20px; /* Space between aside and content */
     border-radius: 10px; /* Rounded corners for aside */
+    position: sticky;
+    top: 0px;
+    height: 100vh;
 }
 
 .content {
@@ -306,7 +310,9 @@ li {
 }
 
 
-
+.chapters p {
+    text-align: justify;
+}
 
 /* Footer */
 footer {
