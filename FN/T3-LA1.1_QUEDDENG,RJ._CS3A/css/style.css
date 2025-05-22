@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Text Colors */
+.txt-white { color: white; }
+.txt-light { color: #AEAEAE; }
+.txt-gray { color: #D3D3D3; } /* NEW */
+.txt-gold { color: #D3D3D3; } /* OVERRIDDEN to light gray */
+
+/* Background Colors */
+.bg-gray { background-color: #171717; }
+.bg-black { background-color: #121212; }
+.bg-gold  { background-color: #D3D3D3; } /* OVERRIDDEN to light gray */
+
+/* Hero Layout */
+.hero-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1536px;
+}
+.hero {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  width: 75%;
+  margin-inline: auto;
+}
+.hero > p {
+  margin-top: 30px;
+  width: 75%;
+  margin-inline: auto;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+.sign-up, .login {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-up p:first-child, .login p:first-child {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.sign-up > *, .login > * {
+  width: 70%;
+  margin-inline: auto;
+}
+form > * {
+  width: 100%;
+}
+label {
+  font-size: 15px;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  font-size: 15px;
+  padding-inline: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+
+/* Buttons */
+.btn-a {
+  border: none;
+  cursor: pointer;
+  color: #D3D3D3; /* light gray */
+}
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D3D3D3; /* light gray */
+  color: black;
+}
+.btn:hover {
+  background-color: #E0E0E0;
+  color: black;
+}
+
+.sign-up > p:last-child, .login > p:last-child {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #E0E0E0;
+}
+
+/* Success Section */
+#success {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#success h1 {
+  font-size: 60px;
+  text-align: center;
+}
+#success-btn {
+  width: 20%;
+}
+
+/* Hidden Toggle */
+.hidden {
+  display: none;
+}

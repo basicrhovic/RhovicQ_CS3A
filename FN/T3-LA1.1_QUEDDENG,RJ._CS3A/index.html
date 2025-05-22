@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Room | Login & Sign-Up</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray">
+
+  <!-- SIGN-UP SECTION -->
+  <div id="signup" class="hero-container">
+    <div class="hero bg-gray txt-light">
+      <img class="logo" src="./resources/Dark Room.png" alt="Dark Room logo"/>
+      <p>
+        Welcome to <strong>Dark Room</strong> — a completely anonymous and secure space for real conversations without judgment.
+      </p>
+    </div>
+    <div class="sign-up bg-black txt-light">
+      <p class="txt-white">Create<br>New Account</p>
+      <form>
+        <label for="username-su">Username</label><br>
+        <input class="bg-gray txt-light" type="text" id="username-su" required><br>
+
+        <label for="email">Email</label><br>
+        <input class="bg-gray txt-light" type="email" id="email" required><br>
+
+        <label for="password-su">Password</label><br>
+        <input class="bg-gray txt-light" type="password" id="password-su" required><br>
+
+        <label for="confirm-password">Confirm Password</label><br>
+        <input class="bg-gray txt-light" type="password" id="confirm-password" required><br>
+      </form>
+
+      <button class="bg-gold btn" onclick="createUser()">Create Account</button>
+      <p>
+        Already a member? 
+        <button class="txt-gold btn-a bg-black" onclick="changePage()">Log in</button>
+      </p>
+    </div>
+  </div>
+
+  <!-- LOGIN SECTION -->
+  <div id="login" class="hero-container bg-gray txt-light hidden">
+    <div class="hero">
+      <img class="logo" src="./resources/Dark Room.png" alt="Dark Room logo"/>
+      <p>
+        Welcome back to <strong>Dark Room</strong> — speak freely and anonymously.
+      </p>
+    </div>
+    <div class="login bg-black txt-light"> 
+      <p class="txt-white">Speak Freely,<br>Anonymously</p>
+      <form>
+        <label for="username">Username</label><br>
+        <input class="bg-gray txt-light" type="text" id="username"><br>
+
+        <label for="password">Password</label><br>
+        <input class="bg-gray txt-light" type="password" id="password"><br>
+      </form>
+
+      <button class="btn bg-gold" onclick="authUser()">Login</button>
+      <p>
+        Need an account? 
+        <button class="btn-a bg-black txt-gold" onclick="changePage()">Create account</button>
+      </p>
+    </div>
+  </div>
+
+  <!-- SUCCESS SECTION -->
+  <div id="success" class="hero-container hidden">
+    <h1 class="txt-white">Login Successful!</h1>
+    <button id="success-btn" class="btn bg-gold" onclick="back()">Go Back</button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
