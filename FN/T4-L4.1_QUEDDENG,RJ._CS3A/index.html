@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Role Login</title>
+</head>
+<body>
+  <!-- Login form container -->
+  <div class="auth-form">
+    <!-- Form title -->
+    <h2>Role Login</h2>
+
+    <!-- Role selection dropdown -->
+    <label for="role">Select Role:</label>
+    <select id="role">
+      <option value="Department Head">Department Head</option>
+      <option value="Faculty">Faculty</option>
+      <option value="Student Officer">Student Officer</option>
+      <option value="Student">Student</option>
+    </select>
+
+    <!-- Password input field -->
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" placeholder="Password" />
+
+    <!-- Login button triggers authentication -->
+    <button onclick="authenticateUser()">Login</button>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
