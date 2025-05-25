@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Room</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray">
+
+    <!-- Wrapper for the entire For You Page layout -->
+    <div class="fyp-container">
+
+        <!-- Top navigation bar with logo, links, and logout -->
+        <header class="bg-black">
+
+            <!-- Website logo -->
+            <img id="fyp-logo" src="resources/logo-name-hero.png" alt="">
+
+            <!-- Section navigation menu -->
+            <nav>
+                <a href="#alpha">Alpha</a>
+                <a href="#bravo">Bravo</a>
+                <a href="#charlie">Charlie</a>
+                <a href="#delta"> Delta</a>
+            </nav>
+
+            <!-- Logout link with icon -->
+            <a id="logout" class="txt-light" href="login.html">
+                Logout <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </header>
+
+        <!-- First post: Alpha -->
+        <div id="alpha" class="post txt-light">
+
+            <!-- Post top section with profile picture and title -->
+            <div class="post-header">
+                <img class="profile" src="resources/profiles/Alpha-profile.png" alt="">
+                <h2>Alpha</h2>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <!-- Post body with image and message -->
+            <div class="content">
+                <img src="resources/post/Alpha-post.jpg" width="375" alt="">
+                <p>
+                    "Ever since the world changed, the weight of duty hasn’t been the same—expectations grew heavier, both from within and from those we serve..."
+                </p>
+            </div>
+
+            <!-- Post bottom section with like, comment, and share icons -->
+            <div class="post-footer">
+                <div class="likes icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>911 likes</p>
+                </div>
+                <div class="comments icon">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>2001 comments</p>
+                </div>
+                <div class="shares icon">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <p>846 shares</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second post: Bravo -->
+        <div id="Bravo" class="post txt-light">
+
+            <!-- Header with profile and bookmark -->
+            <div class="post-header">
+                <img class="profile" src="resources/profiles/Bravo-profie.jpg" alt="">
+                <h2>Bravo</h2>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <!-- Content area with image and reflective caption -->
+            <div class="content">
+                <img src="resources/post/Bravo-post.png" width="375" alt="">
+                <p>
+                    "Lately, it feels like time is always slipping through my hands—like every moment missed is one I can’t reclaim..."
+                </p>
+            </div>
+
+            <!-- Footer with user interaction stats -->
+            <div class="post-footer">
+                <div class="likes icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>125 likes</p>
+                </div>
+                <div class="comments icon">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>2015 comments</p>
+                </div>
+                <div class="shares icon">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <p>003 shares</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third post: Charlie -->
+        <div id="charlie" class="post txt-light">
+
+            <!-- Header with profile and post title -->
+            <div class="post-header">
+                <img class="profile" src="resources/profiles/Charlie-profile.png" alt="">
+                <h2>Charlie</h2>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <!-- Post body in vertical layout -->
+            <div class="content-column">
+                <img src="resources/post/Charlie-post.jpg" width="500" alt="">
+                <p>
+                    "It’s been months since the silence began, but your absence still echoes in everything I do..."
+                </p>
+            </div>
+
+            <!-- Footer showing interaction stats -->
+            <div class="post-footer">
+                <div class="likes icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>523 likes</p>
+                </div>
+                <div class="comments icon">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>2017 comments</p>
+                </div>
+                <div class="shares icon">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <p>1400 shares</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth post: Delta -->
+        <div id="delta" class="post txt-light">
+
+            <!-- Top section with user profile and title -->
+            <div class="post-header">
+                <img class="profile" src="resources/profiles/Delta-profile.jpg" alt="">
+                <h2>Delta</h2>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <!-- Post body with column layout -->
+            <div class="content-column">
+                <img src="resources/post/Delta-post.jpg" width="375" alt="">
+                <p>
+                    "It’s been months since everything changed, but your absence still lingers in every quiet moment..."
+                </p>
+            </div>
+
+            <!-- Bottom section with interaction icons -->
+            <div class="post-footer">
+                <div class="likes icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>821 likes</p>
+                </div>
+                <div class="comments icon">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>1971 comments</p>
+                </div>
+                <div class="shares icon">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <p>011 shares</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page footer with copyright -->
+        <footer class="txt-white bg-black">
+            <!-- Legal and ownership notice -->
+            <p class="txt-light">&copy; <time>2025</time> Rhovic James G. Queddeng. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
